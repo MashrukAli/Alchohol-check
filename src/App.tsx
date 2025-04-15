@@ -36,7 +36,7 @@ function App() {
       const blob = await base64Response.blob();
       
       // Create a unique filename using timestamp
-      const fileName = `image_${Date.now()}.jpg`;
+      const fileName = `public/image_${Date.now()}.jpg`;
       
       // Upload to Amplify Storage
       const result = await uploadData({
